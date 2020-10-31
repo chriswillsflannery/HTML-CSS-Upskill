@@ -1,0 +1,19 @@
+body {
+  font-size: 20px;
+  color: purple;
+}
+
+img {
+  float: left;
+}
+
+p {
+  font-weight: bold;
+  font-size: 16px;
+  color: pink;
+}
+
+p span {
+  color: green;
+  display: none;
+}
