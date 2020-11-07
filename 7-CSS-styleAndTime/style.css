@@ -1,0 +1,34 @@
+body {
+  background-color: lightblue;
+}
+
+#container {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(253, 215, 228);
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  /* overflow: auto */
+}
+
+nav {
+  background-color: orange;
+  /* height: 75%; */
+  width: 75%;
+}
+
+main {
+  background-color: lightseagreen;
+  width: 75%;
+  margin: 10px;
+  /* position: absolute; */
+  /* position: relative; */
+  /* position: sticky */
+  /* position: static */
+}
+
+footer {
+  background-color: rgb(213, 165, 252);
+  width: 50%;
+}

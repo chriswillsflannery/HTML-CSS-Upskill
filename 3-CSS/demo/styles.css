@@ -15,5 +15,5 @@ p {
 
 p span {
   color: green;
-  display: none;
+  /* display: none; */
 }

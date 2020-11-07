@@ -47,7 +47,7 @@ h1 + p {
 
 ## How does the browser handle css ?
 
-- Each broser has a rendering engine, which is the part of the browser that handles HTML + CSS. It turns the HTML and CSS files into pixels on the screen. Ex. Chrome -> Blink, Safari -> Webkit
+- Each browser has a rendering engine, which is the part of the browser that handles HTML + CSS. It turns the HTML and CSS files into pixels on the screen. Ex. Chrome -> Blink, Safari -> Webkit
 
 - Each browser handles CSS styles in a different way. When the browser receives an HTML document, it will parse it and request additional linked resources (link an external stylesheet).
 
