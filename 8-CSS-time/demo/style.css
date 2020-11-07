@@ -1,0 +1,78 @@
+.square {
+  background-color: #ff8fc3;
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  transition-property: height, width;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  /* animation-name: growing;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-direction: alternate
+  animation-delay: delay;
+  animation-play-state: play-state;
+    */
+}
+
+.square:hover {
+  /* transform: translate(100%); */
+  width: 150px;
+  height: 150px;
+}
+
+/* @keyframes growing {
+  from {
+      height: 75px;
+      width: 75px;
+  }
+
+  to {
+      height: 150px;
+      width: 150px;
+  }
+} */
+
+body {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+}
+
+.rolling-circle {
+  margin: 40px;
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+  animation: pulse 3s ease infinite alternate,
+    nudge 5s linear infinite alternate;
+  border-radius: 100%;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    background-color: rgb(139, 95, 145);
+  }
+  50% {
+    background-color: rgb(116, 138, 235);
+  }
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(150px, 0);
+  }
+
+  80% {
+    transform: translate(-150px, 0);
+  }
+}
