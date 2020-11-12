@@ -1,5 +1,10 @@
 .container {
+  border: 1px solid red;
   display: flex;
+  height: 500px;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  align-items: center;
   /* flex-direction: column; */
   /* flex-wrap: wrap; */
   /* justify-content: flex-end; */
@@ -8,21 +13,29 @@
   /* align-content: center; */
 }
 
+.container > * {
+  height: 200px;
+  width: 200px;
+}
+
 .header {
   /* display: flex; */
   background-color: rgb(255, 216, 255);
+  flex-grow: 1;
   /* height: 50px;
   width: 100%; */
 }
 
 .nav {
   background-color: rgb(196, 253, 196);
+  flex-grow: 2;
   /* height: 400px;
   width: 20%; */
 }
 
 .main {
   background-color: lightblue;
+  flex-grow: 1;
   /* height: 400px;
   width: 80%; */
   /* flex-grow: 2; */
@@ -31,6 +44,7 @@
 .footer {
   /* display: flex; */
   background-color: rgb(198, 177, 255);
+  flex-grow: 1;
   /* height: 50px;
   width: 100%; */
 }

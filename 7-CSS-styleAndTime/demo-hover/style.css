@@ -1,0 +1,63 @@
+.parent {
+  background-color: blue;
+  height: 400px;
+  width: 400px;
+}
+
+.child {
+  background-color: red;
+  height: 50%;
+  width: 50%;
+
+  /* transition: [property] [duration] [timing] [delay] */
+
+  /* affect the hover state over course of 1s */
+  transition: transform 1s;
+  /* affect timing function */
+  /* transition: transform 1s linear; */
+  /* option to create custom bezier curves */
+  /* specify delay */
+  /* transition: transform 1s linear 3s; */
+}
+
+.parent:hover .child {
+  /* transform: translateX(100%); */
+
+  /* animation: [name] [duration] [timing] [delay] [direction] [iteration count] [alternate] */
+
+  /* use animation for extended capabilities */
+  /* animation: left-to-right 1s ease; */
+  /* by default the animation styles will be wiped at the end of the first iteration. */
+  /* in order to keep the properties, add [animation-fill-mode] */
+
+  /* you may need to add vendor prefixes. */
+  /* -webkit-animation: left-to-right 1s ease forwards; */
+  /* animation: left-to-right 1s ease forwards; */
+}
+
+/* @-webkit-keyframes left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+} */
+
+/* @keyframes left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+  }
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+} */
